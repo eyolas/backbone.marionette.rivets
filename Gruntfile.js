@@ -131,6 +131,9 @@ module.exports = function(grunt) {
                     replacements: [{
                         pattern: /if\(typeof module([\s\S]*?)else {([^}]*)}/g,
                         replacement: 'this.sightglass = sightglass;'
+                    }, {
+                        pattern: /}\).call\((this)\)/g,
+                        replacement:'}).call(ctx)'
                     }]
                 }
             },
@@ -142,6 +145,9 @@ module.exports = function(grunt) {
                     replacements: [{
                         pattern: /if \(typeof \(typeof module([\s\S]*?)else {([^}]*)}/g,
                         replacement: 'this.rivets = Rivets.factory(sightglass);'
+                    }, {
+                        pattern: /}\).call\((this)\)/g,
+                        replacement:'}).call(ctx)'
                     }]
                 }
             },

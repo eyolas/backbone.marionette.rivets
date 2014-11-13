@@ -35,6 +35,9 @@
 }(this, function(root, Backbone, _) {
   'use strict';
 
+  var ctx = {};
+
+
   var Marionette = Backbone.Marionette;
   (function() {
     // Public sightglass interface.
@@ -230,9 +233,9 @@
   
     // Export module for Node and the browser.
     this.sightglass = sightglass;
-  }).call(this)
+  }).call(ctx)
   
-  var sightglass = this.sightglass;
+  var sightglass = ctx.sightglass;
   
   // Rivets.js
   // version: 0.7.1
@@ -878,7 +881,7 @@
           } else {
             return this.value;
           }
-        }).call(this));
+        }).call(ctx));
       };
   
       Binding.prototype.publish = function() {
@@ -1498,10 +1501,10 @@
   
     this.rivets = Rivets.factory(sightglass);
   
-  }).call(this);
+  }).call(ctx);
   
 
-  var rivets = this.rivets;
+  var rivets = ctx.rivets;
 
   Marionette.ItemView.prototype.getTemplateData = function() {
       var data;

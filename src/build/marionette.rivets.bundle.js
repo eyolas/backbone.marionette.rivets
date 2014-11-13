@@ -16,13 +16,16 @@
 }(this, function(root, Backbone, _) {
   'use strict';
 
+  var ctx = {};
+
+
   var Marionette = Backbone.Marionette;
   // @include ../../.tmp/sightglass.bare.js
-  var sightglass = this.sightglass;
+  var sightglass = ctx.sightglass;
   
   // @include ../../.tmp/rivets.bare.js
 
-  var rivets = this.rivets;
+  var rivets = ctx.rivets;
 
   // @include ../marionette.rivets.itemView.js
 
