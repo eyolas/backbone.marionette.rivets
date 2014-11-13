@@ -1,0 +1,34 @@
+{
+  "name": "backbone.marionette.rivets",
+  "version": "1.0.0",
+  "description": "add rivets to backbone.marionette",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eyolas/backbone.marionette.rivets.git"
+  },
+  "author": "eyolas <dtouzet@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eyolas/backbone.marionette.rivets/issues"
+  },
+  "homepage": "https://github.com/eyolas/backbone.marionette.rivets",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-preprocess": "^4.0.0",
+    "grunt-string-replace": "^1.0.0",
+    "grunt-template": "^0.2.3",
+    "load-grunt-tasks": "^1.0.0",
+    "uglify-js": "^2.4.15",
+    "unwrap": "^0.1.0"
+  }
+}

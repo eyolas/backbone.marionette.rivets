@@ -1,0 +1,21 @@
+{
+  "name": "backbone.marionette.rivets",
+  "version": "1.0.0",
+  "homepage": "https://github.com/eyolas/backbone.marionette.rivets",
+  "authors": [
+    "eyolas <dtouzet@gmail.com>"
+  ],
+  "description": "add rivets to backbone.marionette",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sightglass": "~0.2.3",
+    "rivets": "~0.7.1"
+  }
+}
