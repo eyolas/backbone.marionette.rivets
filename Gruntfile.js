@@ -129,26 +129,36 @@ module.exports = function(grunt) {
                 },
                 options: {
                     replacements: [{
+                        pattern: /\(function\(\) {/g,
+                        replacement: ''
+                    }, {
                         pattern: /if\(typeof module([\s\S]*?)else {([^}]*)}/g,
-                        replacement: 'this.sightglass = sightglass;'
+                        replacement: ''
                     }, {
                         pattern: /}\).call\((this)\)/g,
-                        replacement:'}).call(ctx)'
+                        replacement: ''
                     }]
                 }
-            },
-            rivets: {
-                files: {
-                    './.tmp/rivets.bare.js': './bower_components/rivets/dist/rivets.js'
-                },
+            }
+
+        },
+
+        coffee: {
+            compile: {
                 options: {
-                    replacements: [{
-                        pattern: /if \(typeof \(typeof module([\s\S]*?)else {([^}]*)}/g,
-                        replacement: 'this.rivets = Rivets.factory(sightglass);'
-                    }, {
-                        pattern: /}\).call\((this)\)/g,
-                        replacement:'}).call(ctx)'
-                    }]
+                    bare: true
+                },
+                files: {
+                    './.tmp/rivets.bare.js': ['./bower_components/rivets/src/rivets.coffee',
+                        './bower_components/rivets/src/util.coffee',
+                        './bower_components/rivets/src/parsers.coffee',
+                        './bower_components/rivets/src/observer.coffee',
+                        './bower_components/rivets/src/view.coffee',
+                        './bower_components/rivets/src/bindings.coffee',
+                        './bower_components/rivets/src/binders.coffee',
+                        './bower_components/rivets/src/adapter.coffee',
+                        './src/build/export.rivets.coffee'
+                    ]
                 }
             },
 
@@ -201,5 +211,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('lint', 'Lints our sources', ['jshint']);
 
-    grunt.registerTask('build', 'Build all three versions of the library.', ['clean', 'bower:install', 'lint', 'string-replace', 'preprocess', 'template', 'concat', 'uglify']);
+    grunt.registerTask('build', 'Build all three versions of the library.', ['clean', 'bower:install', 'lint', 'string-replace', 'coffee', 'preprocess', 'template', 'concat', 'uglify']);
 };

@@ -15,7 +15,6 @@
   }
 
 }(this, function(root, Backbone, rivets, _) {
-  'use strict';
 
   var Marionette = Backbone.Marionette;
 
