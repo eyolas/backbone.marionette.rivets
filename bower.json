@@ -2,9 +2,8 @@
   "name": "backbone.marionette.rivets",
   "version": "1.0.0",
   "homepage": "https://github.com/eyolas/backbone.marionette.rivets",
-  "authors": [
-    "eyolas <dtouzet@gmail.com>"
-  ],
+  "main": "./build/backbone.marionette.rivets.js",
+  "author": "David Touzet <dtouzet@gmail.com>",
   "description": "add rivets to backbone.marionette",
   "license": "MIT",
   "ignore": [

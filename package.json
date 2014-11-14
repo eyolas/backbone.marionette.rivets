@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/eyolas/backbone.marionette.rivets.git"
   },
-  "author": "eyolas <dtouzet@gmail.com>",
+  "author": "David Touzet <dtouzet@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/eyolas/backbone.marionette.rivets/issues"
