@@ -15,7 +15,7 @@ add rivets to backbone.marionette
 
 #Installation:
 
-You can install using the package manager of your choice. We currently maintain releases on npm, component, jam and bower (recommended).
+You can install using the package manager of your choice. We currently maintain releases on npm, jam and bower (recommended).
 
 ```sh
 bower install backbone.marionette.rivets
