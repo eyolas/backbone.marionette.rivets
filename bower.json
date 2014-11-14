@@ -1,6 +1,6 @@
 {
   "name": "backbone.marionette.rivets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/eyolas/backbone.marionette.rivets",
   "main": "./build/backbone.marionette.rivets.js",
   "author": "David Touzet <dtouzet@gmail.com>",
