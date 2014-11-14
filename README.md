@@ -12,3 +12,11 @@ add rivets to backbone.marionette
 - `getTemplateData` : renderTemplate call this method instead of serialiazeData. By default get Model or Collection of the view.
 - `_oldRenderTemplate`: old method
 - `oldDestroy`: old method
+
+#Installation:
+
+You can install using the package manager of your choice. We currently maintain releases on npm, component, jam and bower (recommended).
+
+```sh
+bower install backbone.marionette.rivets
+```
